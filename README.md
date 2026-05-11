@@ -1,50 +1,27 @@
-# Infinite-Canvas
-Supports comfyui/API calls/modelscope calls
+# 我的无限画布 (Infinite-Canvas)
 
-支持几乎所有API平台调用，修改API文件中的env的网址和key就可以运行。
-支持本地comfyui调用，支持modelscope免费调用。
+**基于 [hero8152/Infinite-Canvas](https://github.com/hero8152/Infinite-Canvas) 二次开发**
 
-详细教程：https://youtu.be/1y9ShTvgC_w
+支持 ComfyUI、本地模型、各种 AI API 调用
 
-设计了极为强大的分组功能，简化了页面显示和操作
+### 主要功能
+- 无限画布 + 强大分组管理
+- 支持几乎所有 API（修改 .env 即可）
+- 本地 ComfyUI 支持
+- ModelScope 免费调用
+
+### 快速启动
+1. Clone 或下载本仓库
+2. 双击 `安装依赖.bat` 安装依赖
+3. 在根目录创建 `API/.env` 文件，填入你的 API Keys
+4. 双击 `run.bat` 启动
+
+视频教程：https://youtu.be/1y9ShTvgC_w
+
+**这个仓库现在完全属于你了，欢迎继续修改成你自己的软件！**
+
+## License
+MIT - 见 [LICENSE](LICENSE) 文件
 
 ---
-Supports calls from almost all API platforms; simply modify the `env` URL and key in the API file to run it.
-
-Supports local ComfyUI calls and free calls from ModelScope.
-
-Detailed tutorial: https://youtu.be/1y9ShTvgC_w
-
-Features a powerful grouping function, simplifying page display and operation.
-
-----
-不知道为什么上传API和env失败，需要在根目录新建API文件夹，里面增加.env文件，文件内容：
-
-I don't know why uploading the API and env failed. I need to create an API folder in the root directory and add a .env file inside it. The file content is:
-
----
-
-COMFLY_BASE_URL=https://ai.comfly.chat
-
-COMFLY_API_KEY=sk-
-
-MODELSCOPE_API_KEY=ms-
-
-COMFYUI_INSTANCES=127.0.0.1:8188,127.0.0.1:4090
-
-SYSTEM_PROMPT=You are a helpful assistant.
-
-MAX_HISTORY_MESSAGES=30
-
-REQUEST_TIMEOUT=120
-
-IMAGE_POLL_INTERVAL=2
-
-CHAT_MODELS=gpt-5.5
-
-IMAGE_MODELS=gpt-image-2,nano-banana-pro
-
-MODELSCOPE_CHAT_MODELS=Qwen/Qwen3-235B-A22B
-
-<img width="2196" height="1040" alt="image" src="https://github.com/user-attachments/assets/6d823668-cde2-4836-8332-1858efe5f520" />
-<img width="2214" height="771" alt="image" src="https://github.com/user-attachments/assets/52e10958-753f-45ba-a50e-3bbec27be436" />
+Original: hero8152/Infinite-Canvas
